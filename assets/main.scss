@@ -9,6 +9,7 @@ body {
 	font-family: 'Vollkorn', serif;
 	color: $text-color;
 	background-color: $background-color;
+  font-size: 1.2em;
 }
 
 header,
@@ -38,7 +39,7 @@ a:hover {
 /*** main content list ***/
 .main-list-item {
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin: 0.8em 0;
 }
 
