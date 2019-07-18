@@ -1,9 +1,9 @@
 ---
 ---
 
-$text-color: #46433A;
+$text-color: #000000;
 $anchor-text-color: #CE534D;
-$background-color: #F1EED9;
+$background-color: #FFFFFF;
 
 body {
 	font-family: 'Vollkorn', serif;
@@ -60,14 +60,10 @@ since it must be aligned with the content */
 }
 
 .logo {
-	width: 96px;
-	height: 96px;
+	width: 200px;
+	height: 200px;
 	display: inline-block;
 	background-size: cover;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	border: 2px solid $background-color;
-	box-shadow: 0 0 0 3px $text-color;
 }
 
 /*** author ***/
