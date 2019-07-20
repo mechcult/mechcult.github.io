@@ -6,15 +6,15 @@ $anchor-text-color: #CE534D;
 $background-color: #FFFFFF;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Verdana', sans-serif;
 	color: $text-color;
 	background-color: $background-color;
-  font-size: 1.0em;
+  font-size: 1.1em;
 }
 
 header,
 main {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 /*** wrapper div for both header and main ***/
@@ -61,8 +61,8 @@ since it must be aligned with the content */
 }
 
 .logo {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	display: inline-block;
 	background-size: cover;
 }
@@ -122,26 +122,43 @@ footer {
 	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
 	to accomodate both the header column and the content column */
 	.wrapper {
-		width: 680px;
+		  width: 768px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
 	aligned right */
 	header {
 		float: left;
-		width: 46%;
-		text-align: right;
-	}
-
-	.author-container h1,
-	.logo-container,
-	.tagline-container p {
-		text-align: right;
+		width: 45%;
+		text-align: center;
 	}
 
 	main {
-		width: 46%;
-		margin-left: 54%;
+		width: 50%;
+		margin-left: 50%;
+		padding: 0;
+	}
+}
+
+/* All other devices (768px and up) */
+@media (min-width: 1024px) {
+	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
+	to accomodate both the header column and the content column */
+	.wrapper {
+		  width: 768px;
+	}
+
+	/* the header column stays left and has a dynamic width with all contents
+	aligned right */
+	header {
+		float: left;
+		width: 45%;
+		text-align: center;
+	}
+
+	main {
+		width: 60%;
+		margin-left: 45%;
 		padding: 0;
 	}
 }
