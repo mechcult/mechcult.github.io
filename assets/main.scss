@@ -107,58 +107,172 @@ footer {
 	padding: 0 5px;
 }
 
-/*** media queries ***/
-/* X-Small devices (phones, 480px and up) */
-@media (min-width: 480px) {
-	/* wrapper stays 480px wide past 480px wide and is kept centered */
-	.wrapper {
-		width: 480px;
-		margin: 10% auto 0 auto;
+.index {
+	/*** media queries ***/
+	/* X-Small devices (phones, 480px and up) */
+	@media (min-width: 480px) {
+		/* wrapper stays 480px wide past 480px wide and is kept centered */
+		.wrapper {
+			width: 480px;
+			margin: 10% auto 0 auto;
+		}
+	}
+
+	/* All other devices (768px and up) */
+	@media (min-width: 768px) {
+		/* past 768px the layout is changed and the wrapper has a fixed width of 680px
+		to accomodate both the header column and the content column */
+		.wrapper {
+			  width: 768px;
+		}
+
+		/* the header column stays left and has a dynamic width with all contents
+		aligned right */
+		header {
+			float: left;
+			width: 45%;
+			text-align: center;
+		}
+
+		main {
+			width: 50%;
+			margin-left: 50%;
+			padding: 0;
+		}
+	}
+
+	/* All other devices (768px and up) */
+	@media (min-width: 1024px) {
+		/* past 768px the layout is changed and the wrapper has a fixed width of 680px
+		to accomodate both the header column and the content column */
+		.wrapper {
+			  width: 768px;
+		}
+
+		/* the header column stays left and has a dynamic width with all contents
+		aligned right */
+		header {
+			float: left;
+			width: 45%;
+			text-align: center;
+		}
+
+		main {
+			width: 60%;
+			margin-left: 45%;
+			padding: 0;
+		}
 	}
 }
 
-/* All other devices (768px and up) */
-@media (min-width: 768px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
-	.wrapper {
-		  width: 768px;
+
+.mkm3 {
+	/*** media queries ***/
+	/* X-Small devices (phones, 480px and up) */
+	@media (min-width: 480px) {
+		/* wrapper stays 480px wide past 480px wide and is kept centered */
+		.wrapper {
+			width: 480px;
+			margin: 10% auto 0 auto;
+		}
 	}
 
-	/* the header column stays left and has a dynamic width with all contents
-	aligned right */
+	/* All other devices (768px and up) */
+	@media (min-width: 768px) {
+		/* past 768px the layout is changed and the wrapper has a fixed width of 680px
+		to accomodate both the header column and the content column */
+		.wrapper {
+			  width: 768px;
+		}
+	}
+
+	/* All other devices (768px and up) */
+	@media (min-width: 1024px) {
+		/* past 768px the layout is changed and the wrapper has a fixed width of 680px
+		to accomodate both the header column and the content column */
+		.wrapper {
+			  width: 768px;
+		}
+	}
+
 	header {
-		float: left;
-		width: 45%;
+		width: 100%;
 		text-align: center;
 	}
 
 	main {
-		width: 50%;
-		margin-left: 50%;
-		padding: 0;
-	}
-}
+		h2 {
+			margin: 0;
+		}
 
-/* All other devices (768px and up) */
-@media (min-width: 1024px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
-	.wrapper {
-		  width: 768px;
-	}
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 95px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-	/* the header column stays left and has a dynamic width with all contents
-	aligned right */
-	header {
-		float: left;
-		width: 45%;
-		text-align: center;
-	}
+		.contacts{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 55px;
 
-	main {
-		width: 60%;
-		margin-left: 45%;
-		padding: 0;
+			.contacts-row{
+				margin-top: 15px;
+				width: 268px;
+				display: flex;
+				justify-content: left;
+				align-items: center;
+
+				img {
+					display: block;
+					width: 50px;
+					height: auto;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		.sponsors {
+			width: 80%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 55px;
+
+			.column {
+				margin-top: 5px;
+				display	: flex;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					margin-top: 30px;
+					display: block;
+					width: 280px;
+					height: auto;
+				}
+
+				.uniqey {
+					width: 220px;
+				}
+
+				.rama {
+					width: auto;
+					height: 105px;
+				}
+
+				.kono {
+					width: 240px;
+					height: auto;
+				}
+
+				.salvun {
+					width: 240px;
+					height: auto;
+				}
+			}
+		}
 	}
 }

@@ -1,24 +1,26 @@
 ---
 layout: base
 ---
-<div class="wrapper">
-  <header>
-    <div style="text-align: center">
-      {% if site.compass.logo %}
-      <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
-      {% endif %}
-      <img src="/images/mechcult.png" width="300px" alt="Mechcult"/>
+<div class="index">
+  <div class="wrapper">
+    <header>
+      <div style="text-align: center">
+        {% if site.compass.logo %}
+        <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        {% endif %}
+        <img src="/images/mechcult.png" width="300px" alt="Mechcult"/>
 
-      {% if site.compass.tagline %}
-      <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+      </div>
+    </header>
+    <main>
+      {% if site.compass.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
       {% endif %}
-    </div>
-  </header>
-  <main>
-    {% if site.compass.include_content %}
-    <div class="content">
-      {% include content.html %}
-    </div>
-    {% endif %}
-  </main>
+    </main>
+  </div>
 </div>
